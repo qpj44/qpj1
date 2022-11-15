@@ -1,2 +1,3 @@
 # qpj1
-A good project
+tsconfig.json
+package.json

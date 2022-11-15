@@ -1,0 +1,23 @@
+{
+  "include": [
+    "./src",
+  ],
+  "compilerOptions": {
+    "sourceMap": true,
+    "declarationDir": "./build/types",
+    "declaration": true,
+    "target": "es2016",                                 
+    "module": "CommonJS",                                                          
+    "outDir": "./build/dist",      
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "pkg1": ["./node_modules/pkg1"],
+      "pkg2": [ "./node_modules/pkg2"],
+    }
+  },
+  "references": [
+    {"path": "./node_modules/pkg1"},
+    {"path": "./node_modules/pkg2"},
+  ],
+}
